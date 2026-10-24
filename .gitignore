@@ -1,0 +1,23 @@
+# Raw downloads are reproducible from the scripts
+data/raw/
+data/boundaries/
+
+# ArcGIS Pro working files (keep the .aprx and exported maps, skip bulky data)
+gisProject/**/*.gdb/
+gisProject/**/cubes/
+gisProject/**/.backups/
+gisProject/**/Index/
+gisProject/**/ImportLog/
+gisProject/**/GpMessages/
+gisProject/**/*.atbx.bak
+gisProject/**/FMV_Data/
+*.lock
+
+# Metadata ArcGIS Pro writes next to toolboxes and exported tables
+*.pyt.xml
+*.csv.xml
+outputs/tables/schema.ini
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
